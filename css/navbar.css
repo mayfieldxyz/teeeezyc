@@ -107,9 +107,8 @@ a {
   grid-template-rows:repeat(auto, 12vw);
   /*padding: 1rem;*/
   /*gap: .5rem;*/
-  margin-bottom: 5vh;
   aspect-ratio: 16/9;
-  padding-bottom: 10vh;
+  position: relative;
 }
 
 .s {
@@ -237,7 +236,7 @@ grid-template-rows:repeat(100, 1vw);
 
 @media screen and (max-width: 1050px) {
   body {
-    background-color: grey;
+    background-color: rgb(255, 255, 255);
   }
   .gallery {
     display: grid;
@@ -266,7 +265,7 @@ grid-template-rows:repeat(100, 1vw);
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   body {
     background-color: rgb(255, 255, 255);
   }
@@ -298,6 +297,10 @@ grid-template-rows:repeat(100, 1vw);
     height: 100vh;
   }
 
+  .grid-frame {
+    grid-template-columns: 1fr;
+  }
+  
   .title-front h2 {
     visibility: hidden;
     padding: 0;
